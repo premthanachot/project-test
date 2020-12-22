@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAEJO UNIVERSITY test!!!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #198754;
+            padding: 10px;
+            font-size: 20px;
+            text-align: left;
+            height: 140px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #6c757d;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        article {
+            float: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            height: 600px;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .city {
+            background-color: #6c757d;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 100px;
+        }
+
+        .column {
+            float: left;
+            width: 100%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 20px 80px 10px;
+        }
+
+        div.b {
+            position: absolute;
+            left: auto;
+        }
+
+        div.c {
+            position: absolute;
+            left: 150px;
+        }
+
+        .center {
+            margin: auto;
+            width: 60%;
+            height: 500px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        .center1 {
+            margin: auto;
+            width: 60%;
+            height: 200px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        input[type=text] {
+            width: 20%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="b">
+                <IMG SRC="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+                    width="120">
+            </div>
+            <div class="c">
+                <font color="black">
+                    <h2>
+                        <center>มหาวิทยาลัยแม่โจ้</center>
+                        <h3>
+                            <center>MAEJO UNIVERSITY</center>
+                        </h3>
+                    </h2>
+                </font>
+            </div>
+        </div>
+        <link rel="stylesheet" href="styles.css">
+    </header>
+
+    <div class="navbar">
+        <div >
+            <a href="file:///D:/webcode/index.html">หน้าแรก</a>
+        </div>
+        <div class="dropdown"><button class="dropbtn">หลักสูตร<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">สำหลับนักศึกษา<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#" target="#">ใบลา</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">เกี่ยวกับ<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+
+    <article>
+        <div class="center">
+            <center>คำร้องขอพักการศึกษา</center>
+            <form>
+                <label>ภาคเรียน</label><input type="radio" id="term1" name="term" value="term1">
+                <label for="term1">1</label>
+                <input type="radio" id="term2" name="term" value="term2">
+                <label for="term2">2</label>
+                <label>&nbsp;&nbsp;&nbsp;ปีการศึกษา</label>
+                <input type="text" id="lname" name="lname">
+                <label>&nbsp;&nbsp;&nbsp;เรียน คณบดีคณะ</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">วิทยาศาสตร์</option>
+                    <option value="saab">บริหารธุรกิจ</option>
+                    <option value="opel">ผลิตกรรมการเกษตร</option>
+                    <option value="audi">ศิลปศาสตร์</option>
+                </select><br>
+                <label>ข้าพเจ้า</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">นาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">นาง</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">นางสาว</label>
+                <label for="fname">&nbsp;&nbsp;&nbsp;ชื่อ</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">นามสกุล</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="lname">รหัสนักศึกษา</label>
+                <input type="text" id="lname" name="lname">
+                <label for="lname">&nbsp;&nbsp;&nbsp;เบอร์โทรศัพท์</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label>หลักสูตร ปริญญาตรี</label><input type="radio" id="term1" name="er" value="term1">
+                <label for="term1">4-5 ปี</label><input type="radio" id="term1" name="er" value="term1">
+                <label for="term1">4 ปีเทียบเข้า(2 ปี)</label>
+                <input type="radio" id="ma" name="ma" value="ma">
+                <label for="ma">ภาคปกติ</label><input type="radio" id="ma" name="ma" value="ma">
+                <label for="ma">ภาคพิเศษ</label><br>
+                <label>คณะ</label>
+                <select name="faculty" id="faculty">
+                    <option value="volvo">วิทยาศาสตร์</option>
+                    <option value="saab">บริหารธุรกิจ</option>
+                    <option value="opel">ผลิตกรรมการเกษตร</option>
+                    <option value="audi">ศิลปศาสตร์</option>
+                </select>
+                <label>&nbsp;&nbsp;&nbsp;สาชา</label>
+                <select name="branch" id="branch">
+                    <option value="volvo">วิทยาการคอมพิวเตอร์</option>
+                    <option value="saab">บัญชี</option>
+                    <option value="opel">พืชศาสตร์</option>
+                    <option value="audi">ภาษาอังกฤษ</option>
+                </select>
+            </form>
+            <div class="center1">
+                <label>มีความประสงค2จะขอลาพักการศึกษา เนื่องจาก</label>
+            </div>
+        </div>
+
+    </article>
+
+    <footer>Footer</footer>
+</body>
+
+</html>
